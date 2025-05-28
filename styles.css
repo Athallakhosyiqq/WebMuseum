@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: #f9f8f6;
+}
+
+header {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://indonesiakaya.com/wp-content/uploads/2020/10/1__IMG_0442_Arsitektur_bangunan_Kedaton_Kutai_mengadaptasi_desain_istana_pada_masa_Aji_Muhammad_Alimuddin_1899-1910_M.jpg') center/cover no-repeat;
+    filter: blur(8px) brightness(0.7);
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    /* Blur ringan */
+    filter: blur(1px);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.btn-gold {
+    background-color: #b88a44;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.istana-section {
+  background-color: #f4f1e8;
+  padding: 4rem 2rem;
+}
+
+.istana-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.istana-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.istana-text h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #3b2e1e;
+}
+
+.istana-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.istana-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.istana-img {
+    width: 80%; 
+    max-width: 400px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.istana-box {
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.istana-box h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.istana-box p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.istana-box.brown {
+  background-color: #795c2f;
+}
+
+.istana-box.red {
+  background-color: #c1442e;
+}
+
+.koleksi-section {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.koleksi-header .subheading {
+  color: #a1783d;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.koleksi-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #3d2d1c;
+  margin-bottom: 1rem;
+}
+
+.koleksi-header p {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  color: #555;
+}
+
+.koleksi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.koleksi-card {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.koleksi-card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.koleksi-card h3 {
+  color: #7a5522;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.koleksi-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.koleksi-quote {
+  margin-top: 3rem;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* rasio tinggi 4:3 (75%) — bisa disesuaikan */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* supaya gambar memenuhi container dan crop rapi */
+    border-radius: 8px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.koleksi-header .subheading {
+    color: #a1783d;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.koleksi-header h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    color: #3d2d1c;
+    margin-bottom: 1rem;
+}
+
+.koleksi-header p {
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    color: #555;
+}
+
+.koleksi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.koleksi-card {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    /* Agar transform-origin di tengah */
+    transform-origin: center center;
+}
+
+/* Animasi goyang dan zoom in */
+@keyframes shake-zoom {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    20% {
+        transform: scale(1.05) rotate(5deg);
+    }
+    40% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+    60% {
+        transform: scale(1.05) rotate(5deg);
+    }
+    80% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1.05) rotate(0deg);
+    }
+}
+
+/* Saat hover aktifkan animasi */
+.koleksi-card:hover {
+    animation: shake-zoom 0.5s ease forwards;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.koleksi-card h3 {
+    color: #7a5522;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.koleksi-card p {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.icon-info {
+    font-size: 2rem;
+    color: #7a5522;
+    margin-bottom: 0.5rem;
+}
+
+.maps-link {
+    color: #a1783d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.maps-link:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5a4632;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}

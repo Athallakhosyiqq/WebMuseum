@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum Mulawarman</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div><strong>MUSEUM MULAWARMAN</strong></div>
+    <nav>
+      <a href="#sejarah">Sejarah</a>
+      <a href="#koleksi">Koleksi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#informasi">Informasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Istana Sultan Kutai</h1>
+      <p>Menjelajahi warisan budaya Kesultanan Kutai Kartanegara</p>
+      <div>
+        <button class="btn-gold" onclick="location.href='#informasi'">Kunjungi Museum</button>
+        <button class="btn-outline" onclick="location.href='#sejarah'">Pelajari Sejarah</button>
+      </div>
+    </section>
+
+    <section id="sejarah" class="istana-section">
+      <div class="istana-container">
+        <div class="istana-text">
+          <h2>Mengenal Istana Sultan Kutai</h2>
+          <p>Museum Mulawarman dulunya adalah Istana Sultan Kutai Kartanegara, dibangun tahun 1936 oleh Sultan A.M. Parikesit.</p>
+          <p>Diubah menjadi museum pada 1971, menyimpan benda pusaka dan dinamai dari Raja Mulawarman, penguasa Kutai pada abad ke-4.</p>
+          <p>Arsitekturnya mencerminkan perpaduan Eropa dan Melayu, mewakili pengaruh budaya kolonial dan lokal.</p>
+        </div>
+        <div class="istana-info">
+          <img src="IstanaKutai.jpg" alt="Istana Sultan Kutai" class="istana-img" />
+          <div class="istana-box brown">
+            <h3>1300</h3>
+            <p>Tahun Berdiri Kesultanan</p>
+          </div>
+          <div class="istana-box red">
+            <h3>1936</h3>
+            <p>Tahun Pembangunan Istana</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="koleksi" class="koleksi-section">
+      <div class="koleksi-header">
+        <span class="subheading">🗃 KOLEKSI MUSEUM</span>
+        <h2>Warisan Budaya Terpenting</h2>
+        <p>Museum Mulawarman menyimpan artefak bersejarah Kesultanan Kutai Kartanegara.</p>
+      </div>
+
+      <div class="koleksi-grid">
+        <div class="koleksi-card">
+          <img src="mahkota.jpeg" alt="Mahkota Sultan" />
+          <h3>Mahkota Sultan</h3>
+          <p>Mahkota emas para Sultan Kutai, dihias batu permata.</p>
+        </div>
+        <div class="koleksi-card">
+          <img src="keris.jpeg" alt="Keris Pusaka" />
+          <h3>Keris Pusaka</h3>
+          <p>Keris dengan permata dan ukiran, milik para Sultan.</p>
+        </div>
+        <div class="koleksi-card">
+          <img src="naskah.JPG" alt="Naskah Kuno" />
+          <h3>Naskah Kuno</h3>
+          <p>Manuskrip berisi sejarah, silsilah, dan hukum adat Kutai.</p>
+        </div>
+      </div>
+
+      <p class="koleksi-quote">
+        <em>"Setiap koleksi menyimpan cerita dan makna sejarah Kutai."</em>
+      </p>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri</h2>
+      <p>Visualisasi kehidupan Kutai dan momen sejarah penting.</p>
+
+      <div class="gallery-container">
+        <div class="gallery-item"><img src="satu.jpg" alt="Tampak depan Museum" /></div>
+        <div class="gallery-item"><img src="dua.jpg" alt="Detail ukiran pintu Museum" /></div>
+        <div class="gallery-item"><img src="tiga.jpg" alt="Ruang singgasana Sultan" /></div>
+        <div class="gallery-item"><img src="empat.jpg" alt="Koleksi pusaka Kutai" /></div>
+        <div class="gallery-item"><img src="lima.jpg" alt="Replika kapal tradisional" /></div>
+        <div class="gallery-item"><img src="enam.jpg" alt="Taman belakang Museum" /></div>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <span class="close">&times;</span>
+      <img class="popup-content" id="popup-img" alt="Preview" />
+    </div>
+
+    <section id="informasi">
+      <div class="koleksi-header">
+        <span class="subheading"><i class="fa-solid fa-location-dot"></i> INFORMASI KUNJUNGAN</span>
+        <h2>Rencanakan Kunjungan Anda</h2>
+        <p><i class="fa-solid fa-info-circle"></i> Informasi penting untuk berkunjung ke Museum Mulawarman.</p>
+      </div>
+
+      <div class="koleksi-grid">
+        <div class="koleksi-card">
+          <i class="fa-solid fa-clock icon-info"></i>
+          <h3>Jam Operasional</h3>
+          <p><strong>Senin - Jumat:</strong> 08.00 - 16.00 WITA</p>
+          <p><strong>Sabtu - Minggu:</strong> 09.00 - 17.00 WITA</p>
+          <p><strong>Hari Libur Nasional:</strong> 09.00 - 16.00 WITA</p>
+        </div>
+        <div class="koleksi-card">
+          <i class="fa-solid fa-ticket icon-info"></i>
+          <h3>Tiket Masuk</h3>
+          <p><strong>Dewasa:</strong> Rp 20.000</p>
+          <p><strong>Pelajar:</strong> Rp 10.000</p>
+          <p><strong>Anak-anak:</strong> Rp 5.000</p>
+          <p><strong>Rombongan:</strong> Diskon 20%</p>
+        </div>
+        <div class="koleksi-card">
+          <i class="fa-solid fa-location-dot icon-info"></i>
+          <h3>Lokasi</h3>
+          <p>Jl. Diponegoro No.24, Tenggarong, Kalimantan Timur</p>
+          <p>Telepon: (0541) 661411</p>
+          <p><a href="https://maps.google.com" target="_blank">Lihat di Google Maps</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Museum Mulawarman. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <script>
+    const images = document.querySelectorAll('.gallery-item img');
+    const popup = document.getElementById('popup');
+    const popupImg = document.getElementById('popup-img');
+    const close = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        popup.style.display = 'flex';
+        popupImg.src = img.src;
+        popupImg.alt = img.alt;
+      });
+    });
+
+    close.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
